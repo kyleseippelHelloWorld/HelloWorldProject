@@ -76,13 +76,6 @@
         die("Connection failed: " . mysqli_connect_error());
     }
     
-    $sql = "CREATE DATABASE myDB";
-    if ($conn->query($sql) == TRUE) {
-        echo "Database created successfully";
-    } else {
-        "Error creating database: " . $conn->error;
-    }
-    
     $sql = "CREATE TABLE USERS (
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
